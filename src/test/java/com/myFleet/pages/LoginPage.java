@@ -1,7 +1,7 @@
-package com.project_name.pages;
+package com.myFleet.pages;
 
 
-import com.project_name.utilities.Driver;
+import com.myFleet.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;

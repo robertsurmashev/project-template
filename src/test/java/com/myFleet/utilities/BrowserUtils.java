@@ -1,4 +1,4 @@
-package com.project_name.utilities;
+package com.myFleet.utilities;
 
 import org.junit.Assert;
 import org.openqa.selenium.*;

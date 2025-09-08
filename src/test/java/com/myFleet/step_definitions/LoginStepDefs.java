@@ -1,7 +1,7 @@
-package com.project_name.step_definitions;
+package com.myFleet.step_definitions;
 
-import com.project_name.pages.LoginPage;
-import com.project_name.utilities.ConfigurationReader;
+import com.myFleet.pages.LoginPage;
+import com.myFleet.utilities.ConfigurationReader;
 import io.cucumber.java.en.Given;
 public class LoginStepDefs {
 

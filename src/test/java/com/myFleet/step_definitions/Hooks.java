@@ -1,11 +1,11 @@
-package com.project_name.step_definitions;
+package com.myFleet.step_definitions;
 
 
 
 
-import com.project_name.utilities.BrowserUtils;
-import com.project_name.utilities.ConfigurationReader;
-import com.project_name.utilities.Driver;
+import com.myFleet.utilities.BrowserUtils;
+import com.myFleet.utilities.ConfigurationReader;
+import com.myFleet.utilities.Driver;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
@@ -47,8 +47,6 @@ public class Hooks {
 
         }
 
-
-
         BrowserUtils.sleep(2);
         Driver.closeDriver();
 
@@ -63,6 +61,4 @@ public class Hooks {
     public void teardownStep(){
         System.out.println("-----> @AfterSTEP : Running after each step!");
     }
-
-
 }
