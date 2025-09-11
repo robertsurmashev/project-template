@@ -44,6 +44,9 @@ public class BasePage {
     @FindBy(xpath = "//h3[.='How To Use Pinbar']")
     public WebElement linkText;
 
+    @FindBy(xpath = "//img[@src='/bundles/oronavigation/images/pinbar-location.jpg']")
+    public WebElement pinbarImg;
+
     public BasePage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }

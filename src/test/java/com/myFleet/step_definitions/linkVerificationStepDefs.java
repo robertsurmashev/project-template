@@ -19,7 +19,9 @@ public class linkVerificationStepDefs {
 
     @Then("pinbar image is displayed")
     public void pinbar_image_is_displayed() {
-
+        String actualSrc = basePage.pinbarImg.getAttribute("src");
+        String expected = "/bundles/oronavigation/images/pinbar-location.jpg";
+        Assert.assertEquals(actualSrc, expected);
     }
 
 }
