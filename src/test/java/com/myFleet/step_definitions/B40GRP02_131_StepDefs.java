@@ -18,13 +18,13 @@ public class B40GRP02_131_StepDefs {
     }
     @Then("user can see How to use pinbar text")
     public void user_can_see_how_to_use_pinbar_text() {
-        Assert.assertEquals("How To Use Pinbar", basePage.linkText);
+        Assert.assertEquals("How To Use Pinbar", basePage.linkText.getText());
     }
 
     @Then("pinbar image is displayed")
     public void pinbar_image_is_displayed() {
         String actualSrc = basePage.pinbarImg.getAttribute("src");
-        String expected = "/bundles/oronavigation/images/pinbar-location.jpg";
+        String expected = "https://qa3.vytrack.com/bundles/oronavigation/images/pinbar-location.jpg";
         Assert.assertEquals(actualSrc, expected);
     }
 

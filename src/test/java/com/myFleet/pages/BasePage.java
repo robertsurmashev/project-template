@@ -41,7 +41,7 @@ public class BasePage {
     @FindBy(xpath = "//a[.='Learn how to use this space']")
     public WebElement pianoLink;
 
-    @FindBy(xpath = "//h3[.='How To Use Pinbar']")
+    @FindBy(xpath = "//div[@class='clearfix']/h3")
     public WebElement linkText;
 
     @FindBy(xpath = "//img[@src='/bundles/oronavigation/images/pinbar-location.jpg']")
