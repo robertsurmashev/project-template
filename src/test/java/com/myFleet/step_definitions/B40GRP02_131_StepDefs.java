@@ -2,6 +2,7 @@ package com.myFleet.step_definitions;
 
 import com.myFleet.pages.BasePage;
 import com.myFleet.pages.LoginPage;
+import com.myFleet.utilities.BrowserUtils;
 import com.myFleet.utilities.Driver;
 import io.cucumber.java.en.*;
 import org.junit.Assert;
@@ -31,6 +32,7 @@ public class B40GRP02_131_StepDefs {
     public void userLogedIn() {
         Driver.getDriver().get("https://qa3.vytrack.com/");
         loginPage.login("user7", "UserUser123");
+        BrowserUtils.sleep(3);
     }
 
 
