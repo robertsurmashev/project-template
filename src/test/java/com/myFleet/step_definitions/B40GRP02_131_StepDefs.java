@@ -1,11 +1,14 @@
 package com.myFleet.step_definitions;
 
 import com.myFleet.pages.BasePage;
+import com.myFleet.pages.LoginPage;
+import com.myFleet.utilities.Driver;
 import io.cucumber.java.en.*;
 import org.junit.Assert;
 
-public class linkVerificationStepDefs {
+public class B40GRP02_131_StepDefs {
 
+    LoginPage loginPage = new LoginPage();
     BasePage basePage = new BasePage();
 
     @Given("when user click on the link")
@@ -23,5 +26,12 @@ public class linkVerificationStepDefs {
         String expected = "/bundles/oronavigation/images/pinbar-location.jpg";
         Assert.assertEquals(actualSrc, expected);
     }
+
+    @Given("user loged in")
+    public void userLogedIn() {
+        Driver.getDriver().get("https://qa3.vytrack.com/");
+        loginPage.login("user7", "UserUser123");
+    }
+
 
 }
