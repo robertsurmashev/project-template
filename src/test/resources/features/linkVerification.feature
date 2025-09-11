@@ -1,9 +1,8 @@
-Feature: User should be able to click “How To Use Pinbar” link
-@ad
-Scenario: Verify that when users click the
-“Learn how to use this space” link on the
-homepage
-Then users can see: “How To Use Pinbar” and Use the pin icon on the right top corner of page to create  fast access link in the pinbar
+Feature: User should be able to click How To Use Pinbar link
 
-  Scenario: Verify that  users see an image on the page
-  about how to use pinbar
+Scenario: Verify that Learn how to use this space link is displayed
+And when user click on the link
+  Then user can see How to use pinbar text
+
+  Scenario: Verify that user can see pinbar image
+    Then pinbar image is displayed

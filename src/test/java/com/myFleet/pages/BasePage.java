@@ -38,6 +38,12 @@ public class BasePage {
     @FindBy(linkText = "My User")
     public WebElement myUser;
 
+    @FindBy(xpath = "//a[.='Learn how to use this space']")
+    public WebElement pianoLink;
+
+    @FindBy(xpath = "//h3[.='How To Use Pinbar']")
+    public WebElement linkText;
+
     public BasePage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
