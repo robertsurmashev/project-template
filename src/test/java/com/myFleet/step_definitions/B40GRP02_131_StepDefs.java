@@ -26,8 +26,8 @@ public class B40GRP02_131_StepDefs {
     @Then("pinbar image is displayed")
     public void pinbar_image_is_displayed() {
         String actualSrc = basePage.pinbarImg.getAttribute("src");
-        String expected = "https://qa3.vytrack.com/bundles/oronavigation/images/pinbar-location.jpg";
-        Assert.assertEquals(expected, actualSrc);
+        String expectedSrc = "https://qa3.vytrack.com/bundles/oronavigation/images/pinbar-location.jpg";
+        Assert.assertEquals(expectedSrc, actualSrc);
     }
 
     @Given("user loged in")
