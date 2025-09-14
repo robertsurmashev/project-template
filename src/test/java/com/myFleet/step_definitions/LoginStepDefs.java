@@ -1,10 +1,20 @@
 package com.myFleet.step_definitions;
 
 import com.myFleet.pages.LoginPage;
+import com.myFleet.pages.MainModulesPage_MA;
+import com.myFleet.utilities.BrowserUtils;
 import com.myFleet.utilities.ConfigurationReader;
+import com.myFleet.utilities.Driver;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import org.openqa.selenium.interactions.Actions;
+
+import java.util.List;
+
 public class LoginStepDefs {
 
+MainModulesPage_MA mainModulesPageMa = new MainModulesPage_MA();
 
     @Given("the user is on the login page")
     public void the_user_is_on_the_login_page() {
@@ -29,12 +39,6 @@ public class LoginStepDefs {
         }
         //send username and password and login
         new LoginPage().login(username,password);
-    }
-
-    @Given("the user logged in with username as {string} and password as {string}")
-    public void the_user_logged_in_with_username_as_and_password_as(String username, String password) {
-      LoginPage loginPage=new LoginPage();
-      loginPage.login(username,password);
     }
 
 
