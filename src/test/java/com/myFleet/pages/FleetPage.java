@@ -1,9 +1,6 @@
-package com.Fleet_Neat.pages;
+package com.myFleet.pages;
 
-import com.Fleet_Neat.utilities.Driver;
-import org.openqa.selenium.By;
-import org.openqa.selenium.SearchContext;
-import org.openqa.selenium.WebDriver;
+import com.myFleet.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
