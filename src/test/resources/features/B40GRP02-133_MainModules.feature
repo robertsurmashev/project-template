@@ -1,5 +1,5 @@
 
-
+@login
 
 Feature: Vehicles Model Page Validation
   I want to verify Fleet → Vehicle Models columns
@@ -8,7 +8,7 @@ Feature: Vehicles Model Page Validation
 
 
 
-  @login
+
   Scenario: Verify all columns in Vehicles Model table
     Given the user logged in as "store manager"
     Given user should be able to click on fleet dropdown
