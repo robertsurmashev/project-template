@@ -21,6 +21,7 @@ public class MainModulesPage_YE {
     @FindBy(xpath = "(//a[@class='dropdown-toggle'][normalize-space()='...'])[2]")
     public WebElement dotsMenuItem;
 
+
     @FindBy(xpath = "//div[@id='sidebar-right']")
     public WebElement view;
 

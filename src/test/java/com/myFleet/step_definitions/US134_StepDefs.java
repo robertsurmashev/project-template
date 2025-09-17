@@ -20,7 +20,6 @@ public class US134_StepDefs {
         BrowserUtils.sleep(3);
         action.moveToElement(fleetPage.fleetMenu).perform();
         fleetPage.vehiclesSubMenu.click();
-
     }
 
     @And("the user hovers over the three dots menu")
