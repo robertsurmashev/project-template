@@ -1,4 +1,4 @@
-@Robert
+@B40GRP02-136
 Feature: As a user, I want to create a recurring (repetitive) calendar event
 
   Scenario Outline: Verify that users see the number “1” by default in the Repeat Every input option.
@@ -17,10 +17,10 @@ Feature: As a user, I want to create a recurring (repetitive) calendar event
   Scenario Outline: Verify that users see the error message “This value should not be blank.” when the Calendar event
                     Repeat Every field is cleared (delete the number 1).
 
-    Given users are logged in as "<userType>" with "<username>" and "<password>"
-    Given users are on Create Calendar event page
-    When users click Repeat and deletes number
-    Then users can see the error message
+    Given user is logged in as "<userType>" with "<username>" and "<password>"
+    Given user is on Create Calendar event page
+    When user clicks Repeat and deletes number
+    Then user can see the error message
 
     Examples:
       | userType      | username        | password    |
