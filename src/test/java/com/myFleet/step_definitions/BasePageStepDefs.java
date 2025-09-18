@@ -12,25 +12,9 @@ import org.openqa.selenium.interactions.Actions;
 import java.util.List;
 
 public class BasePageStepDefs {
-package com.myFleet.step_definitions;
 
-import MainModules_Page_MA;
-import com.myFleet.utilities.BrowserUtils;
-import com.myFleet.utilities.Driver;
-import io.cucumber.java.PendingException;
-import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import org.junit.Assert;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import io.cucumber.datatable.DataTable;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 
-    public class BasePageStepDefs {
 
         MainModules_Page_MA mainModulesPageMa = new MainModules_Page_MA();
 
@@ -100,4 +84,4 @@ import java.util.List;
 
 
 
-}
+
