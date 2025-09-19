@@ -17,6 +17,7 @@ public class LoginPage {
 
 
 
+
     @FindBy(id="prependedInput2")
     public WebElement password;
 
