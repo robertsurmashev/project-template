@@ -1,0 +1,27 @@
+package com.myFleet.pages;
+
+import com.myFleet.utilities.Driver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class FleetPage_YE {
+
+    public FleetPage_YE() {
+
+        PageFactory.initElements(Driver.getDriver(), this);
+    }
+
+    @FindBy(xpath = "//span[@class='title title-level-1'][normalize-space()='Fleet']")
+    public WebElement fleetMenu;
+
+    @FindBy(xpath = "//span[normalize-space()='Vehicles']")
+    public WebElement vehiclesSubMenu;
+
+    @FindBy(xpath = "(//a[@class='dropdown-toggle'][normalize-space()='...'])[2]")
+    public WebElement dotsMenuItem;
+
+    @FindBy(xpath = "//div[@id='sidebar-right']")
+    public WebElement view;
+
+}
