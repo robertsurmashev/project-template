@@ -21,7 +21,6 @@ public class B40GRP02_134_StepDefs {
         BrowserUtils.sleep(4);
         action.moveToElement(fleetPage.fleetMenu).perform();
         fleetPage.vehiclesSubMenu.click();
-
     }
 
     @And("the user hovers over the three dots menu")
