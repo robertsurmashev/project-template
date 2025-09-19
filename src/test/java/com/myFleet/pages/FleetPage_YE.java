@@ -12,7 +12,6 @@ public class FleetPage_YE {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-
     @FindBy(xpath = "//span[@class='title title-level-1'][normalize-space()='Fleet']")
     public WebElement fleetMenu;
 
