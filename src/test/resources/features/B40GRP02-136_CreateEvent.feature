@@ -1,6 +1,7 @@
-@B40GRP02-136
+
 Feature: As a user, I want to create a recurring (repetitive) calendar event
 
+@B40GRP02-136
   Scenario Outline: Verify that users see the number “1” by default in the Repeat Every input option.
 
     Given user is logged in as "<userType>" with "<username>" and "<password>"
